@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "Iusiel",
+    "email": "iusiel@outlook.com"
+  },
+  "repository": "https://github.com/iusiel/portfolio/portfolio",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
