@@ -1,0 +1,50 @@
+.nav-main-menu
+    padding 30px 0px
+
+.logo-container
+    padding-bottom 30px
+
+.logo
+    text-decoration none
+
+.main-menu
+  display flex
+  flex-direction column
+  align-content center
+  align-items center
+  justify-content center
+  list-style none
+  padding 0
+  margin 0
+  margin-top 30px
+
+  @media screen and (min-width: $smallDesktop)
+    flex-direction row
+
+  li
+    padding 10px 0px
+
+    @media screen and (min-width: $smallDesktop)
+      padding 0 20px
+
+
+.main-menu__link
+  color: $yellow2
+  text-decoration none
+
+  &::after
+    content: '';
+    border-bottom: 3px solid $yellow2;
+    display: block;
+    transform: scale(0);
+    transition: all ease 0.2s;
+
+  &.active
+    font-weight bold
+
+    &::after
+      transform: scale(1);
+
+
+  &:hover::after
+    transform: scale(1);
