@@ -1,17 +1,17 @@
 <script>
-import Header from "./../../components/Header.vue";
+import Header from './../../components/Header.vue';
 export default {
-  components: {
-    Header,
-  },
+    components: {
+        Header,
+    },
 };
 </script>
 
 <template>
-  <div>
-    <Header :activeLink="$frontmatter.activeLink" />
-    <div class="container">
-      <Content />
+    <div>
+        <Header :activeLink="$frontmatter.activeLink" />
+        <div class="container">
+            <Content />
+        </div>
     </div>
-  </div>
 </template>
