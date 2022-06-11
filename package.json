@@ -10,10 +10,12 @@
   "repository": "https://github.com/iusiel/portfolio/portfolio",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "prettier": "prettier --write ."
   },
   "license": "MIT",
   "devDependencies": {
+    "prettier": "2.6.2",
     "vuepress": "^1.5.3"
   }
 }
