@@ -10,8 +10,10 @@ export default {
 <template>
     <div>
         <Header :activeLink="$frontmatter.activeLink" />
-        <div class="container">
-            <Content />
-        </div>
+        <main>
+            <div class="container">
+                <Content />
+            </div>
+        </main>
     </div>
 </template>

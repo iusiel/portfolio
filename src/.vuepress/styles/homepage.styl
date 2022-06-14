@@ -1,0 +1,100 @@
+.home__projects
+    display flex
+    flex-wrap wrap
+    margin-top 50px
+
+.home__project
+    flex-basis 50%
+    transition all ease 0.3s
+    opacity 1
+    display flex
+    flex-wrap wrap
+    justify-content center
+    margin-bottom 20px
+
+
+.home__project-button
+    width 90%
+    background $yellow
+    text-align center
+    padding 50px 20px
+    cursor pointer
+    transition all ease 0.3s
+
+    &:hover
+      animation: 0.2s 2 alternate bumpUp;
+
+.home__back-to-projects
+  background $yellow;
+  margin 50px auto;
+  text-align center
+  padding 20px
+  cursor pointer
+  transition all ease 0.3s
+  animation: 0.2s 1 forwards scaleUp;
+  display inline-block;
+  
+.home__project-summary-container
+  width 70%
+  margin 0 auto
+
+.home__project-details
+  display flex
+
+.home__project-details-tech-stack
+  padding-right 30px
+  min-width 200px
+  animation: 0.2s 1 forwards slideFromleft; 
+
+.home__project-summary-title
+  text-align center
+  animation: 0.2s 1 forwards scaleUp; 
+
+.home__project-details-summary
+  animation: 0.2s 1 forwards slideFromRight;
+
+.home__project-link
+  display block
+  color $yellow2
+
+@keyframes scaleUp {
+  from {
+    transform scale(0)
+  }
+  to {
+    transform scale(1)
+  }
+}
+
+@keyframes bumpUp {
+  from {
+    position relative
+    top 0px
+  }
+  to {
+    position relative
+    top 5px
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity 0
+    transform translateX(50px)
+  }
+  to {
+    opacity 1
+    transform translateX(0px)
+  }
+}
+
+@keyframes slideFromleft {
+  from {
+    opacity 0
+    transform translateX(-50px)
+  }
+  to {
+    opacity 1
+    transform translateX(0px)
+  }
+}
