@@ -1,8 +1,11 @@
 <script>
 import Header from './../../components/Header.vue';
+import Footer from './../../components/Footer.vue';
+
 export default {
     components: {
         Header,
+        Footer,
     },
 };
 </script>
@@ -10,10 +13,13 @@ export default {
 <template>
     <div>
         <Header :activeLink="$frontmatter.activeLink" />
-        <main>
-            <div class="container">
-                <Content />
-            </div>
-        </main>
+        <div class="main__container">
+            <main>
+                <div class="container">
+                    <Content />
+                </div>
+            </main>
+            <Footer />
+        </div>
     </div>
 </template>
