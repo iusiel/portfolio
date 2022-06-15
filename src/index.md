@@ -10,7 +10,7 @@ projects:
           - VuePress
       summary: Feature 1 Description
     - title: Feature 2 Title
-      image: Feature 1 Description
+      image:
       projectLinks:
           - link 1
           - link 2
@@ -19,7 +19,7 @@ projects:
           - test 2
       summary: Feature 1 Description
     - title: Feature 3 Title
-      image: Feature 1 Description
+      image:
       projectLinks:
           - link 1
           - link 2
@@ -28,7 +28,7 @@ projects:
           - test 2
       summary: Feature 1 Description
     - title: Feature 4 Title
-      image: Feature 1 Description
+      image:
       projectLinks:
           - link 1
           - link 2

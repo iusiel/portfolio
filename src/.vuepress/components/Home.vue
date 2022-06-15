@@ -92,10 +92,13 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div
-                    v-html="projectBeingShown.summary"
-                    class="home__project-details-summary"
-                ></div>
+                <div class="home__project-details-summary">
+                    <img
+                        v-if="projectBeingShown.image"
+                        v-bind:src="projectBeingShown.image"
+                    />
+                    <div v-html="projectBeingShown.summary"></div>
+                </div>
             </div>
 
             <div style="text-align: center">
