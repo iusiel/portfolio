@@ -1,4 +1,7 @@
 ---
+meta:
+    - name: description
+      content: Sample description
 activeLink: home
 projects:
     - title: Feature 1 Title
