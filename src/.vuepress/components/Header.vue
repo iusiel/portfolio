@@ -14,13 +14,10 @@ export default {
                     >IUSIEL</a
                 >
             </div>
-            <p>
-                I am a web developer that has over ten years of experience in
-                the field. I am skilled in PHP, CSS and JS. I mainly use Laravel
-                for my projects together with SASS as my CSS preprocessor and
-                JavaScript modules via import/export and npm. I keep up with the
-                latest trends by listening to podcasts and checking out roadmaps
-                created by other developers in the field.
+            <p style="text-align: center">
+                Developing web applications since 2011 using PHP. I mainly use
+                Laravel for my projects. I am currently learning Symfony, Vue.JS
+                and Jamstack.
             </p>
             <ul class="main-menu">
                 <li>
