@@ -59,7 +59,13 @@ export default {
                 class="home__project to-animate"
                 v-bind:ref="project.title"
             >
-                <div @click="showProject(project)" class="home__project-button">
+                <div
+                    @click="showProject(project)"
+                    @keypress.enter="showProject(project)"
+                    class="home__project-button"
+                    tabindex="0"
+                    role="button"
+                >
                     <h2>{{ project.title }}</h2>
                 </div>
             </div>
@@ -95,16 +101,21 @@ export default {
                 <div class="home__project-details-summary">
                     <img
                         v-if="projectBeingShown.image"
-                        v-bind:src="projectBeingShown.image"
+                        v-bind:src="projectBeingShown.image.src"
+                        v-bind:alt="projectBeingShown.image.alt"
                     />
                     <div v-html="projectBeingShown.summary"></div>
                 </div>
             </div>
 
             <div style="text-align: center">
-                <div @click="showAllProjects" class="home__back-to-projects">
+                <button
+                    @click="showAllProjects"
+                    class="home__back-to-projects"
+                    tabindex="0"
+                >
                     GO BACK
-                </div>
+                </button>
             </div>
         </div>
     </div>

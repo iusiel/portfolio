@@ -16,7 +16,9 @@ projects:
       <br/><br/>
       The site has three main pages, the home page, the about me page, and the random things (blog) page.'
     - title: Lap Times Saver
-      image: /images/lts1.png
+      image: 
+        src: /images/lts1.png
+        alt: Lap times summary dashboard
       projectLinks:
           - https://github.com/iusiel/lap_times_saver
       techStackUsed:
@@ -32,10 +34,12 @@ projects:
         <li>Lap times CRUD</li>
         <li>Summary page with links to their respective charts</li>
       </ul>
-        <img src="/images/lts2.png" />
+        <img alt="Lap times chart" src="/images/lts2.png" />
       '
     - title: PAASRS
-      image: /images/paasrs1.png
+      image: 
+        src: /images/paasrs1.png
+        alt: PAASRS main dashboard
       projectLinks:
           - https://github.com/iusiel/paasrs
       techStackUsed:
@@ -54,12 +58,14 @@ projects:
         <li>Study function</li>
       </ul>
 
-        <img src="/images/paasrs2.png" />
+        <img alt="PAASRS showing question" src="/images/paasrs2.png" />
 
-        <img src="/images/paasrs3.png" />
+        <img alt="PAASRS showing answer" src="/images/paasrs3.png" />
       '
     - title: Calculator App
-      image: /images/calculator1.png
+      image: 
+        src: /images/calculator1.png
+        alt: Calculator app
       projectLinks:
       techStackUsed:
           - Vue 2.6
