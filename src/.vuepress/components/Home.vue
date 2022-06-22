@@ -16,7 +16,10 @@ export default {
                 .querySelectorAll('.home__project.to-animate')
                 .forEach((element) => {
                     element.style.opacity = 0;
-                    const randomX = this.getRandomArbitrary(-100, 100);
+                    const randomX =
+                        this.getWindowWidth() > 767
+                            ? this.getRandomArbitrary(-100, 100)
+                            : 0;
                     const randomY = this.getRandomArbitrary(-100, 100);
                     element.style.transform = `translate(${randomX}px, ${randomY}px)`;
 
@@ -40,6 +43,14 @@ export default {
                         element.style.transform = null;
                     });
             }, 100);
+        },
+
+        getWindowWidth() {
+            try {
+                return document.body.clientWidth;
+            } catch (error) {
+                return 0;
+            }
         },
 
         getRandomArbitrary(min, max) {
