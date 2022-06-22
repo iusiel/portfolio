@@ -1,9 +1,10 @@
 footer
   flex 1
   display flex
-  justify-content center
-  align-items end
-  align-content end
+  justify-content flex-end
+  align-items center
+  align-content center
+  flex-direction column
   padding-bottom 20px
   font-size 0.8rem
   margin-top 20px
@@ -13,3 +14,25 @@ footer
   width 50%;
   text-align center;
   padding-top 20px;
+
+.footer__link
+  color $yellow2
+  text-decoration none
+  display inline-block
+
+  &::after
+    content: '';
+    border-bottom: 1px solid $yellow2;
+    display: block;
+    transform: scale(0);
+    transition: all ease 0.2s;
+
+  &.active
+    font-weight bold
+
+    &::after
+      transform: scale(1);
+
+
+  &:hover::after
+    transform: scale(1);

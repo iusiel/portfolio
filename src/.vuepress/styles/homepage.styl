@@ -42,6 +42,11 @@
   transition all ease 0.3s
   animation: 0.2s 1 forwards scaleUp;
   display inline-block;
+  font-family 'Open Sans', sans-serif
+  font-size 1rem
+  color $yellow2
+  border none
+
   
 .home__project-summary-container
   width 100%
@@ -59,7 +64,7 @@
 
 .home__project-details-tech-stack
   min-width 200px
-  animation 0.2s 1 forwards slideFromleft;
+  animation 0.2s 1 forwards slideFromUp;
   order 2
   margin-top 30px
   word-break break-word
@@ -68,17 +73,21 @@
     order 1
     padding-right 30px
     margin-top 0px
+    animation 0.2s 1 forwards slideFromleft;
+
 
 .home__project-summary-title
   text-align center
   animation: 0.2s 1 forwards scaleUp; 
 
 .home__project-details-summary
-  animation: 0.2s 1 forwards slideFromRight;
+  animation: 0.2s 1 forwards slideFromDown;
   order 1
 
   @media screen and (min-width: $tablet)
     order 2
+    animation: 0.2s 1 forwards slideFromRight;
+
 
 .home__project-link
   display block
@@ -123,5 +132,27 @@
   to {
     opacity 1
     transform translateX(0px)
+  }
+}
+
+@keyframes slideFromUp {
+  from {
+    opacity 0
+    transform translateY(50px)
+  }
+  to {
+    opacity 1
+    transform translateY(0px)
+  }
+}
+
+@keyframes slideFromDown {
+  from {
+    opacity 0
+    transform translateY(-50px)
+  }
+  to {
+    opacity 1
+    transform translateY(0px)
   }
 }

@@ -16,7 +16,10 @@ export default {
                 .querySelectorAll('.home__project.to-animate')
                 .forEach((element) => {
                     element.style.opacity = 0;
-                    const randomX = this.getRandomArbitrary(-100, 100);
+                    const randomX =
+                        this.getWindowWidth() > 767
+                            ? this.getRandomArbitrary(-100, 100)
+                            : 0;
                     const randomY = this.getRandomArbitrary(-100, 100);
                     element.style.transform = `translate(${randomX}px, ${randomY}px)`;
 
@@ -42,6 +45,14 @@ export default {
             }, 100);
         },
 
+        getWindowWidth() {
+            try {
+                return document.body.clientWidth;
+            } catch (error) {
+                return 0;
+            }
+        },
+
         getRandomArbitrary(min, max) {
             return Math.random() * (max - min) + min;
         },
@@ -51,7 +62,7 @@ export default {
 
 <template>
     <div>
-        <h1 style="text-align: center">SOME OF MY WORKS</h1>
+        <h1 style="text-align: center">SOME OF MY PROJECTS</h1>
         <div class="home__projects">
             <div
                 v-for="project in $frontmatter.projects"
@@ -59,7 +70,13 @@ export default {
                 class="home__project to-animate"
                 v-bind:ref="project.title"
             >
-                <div @click="showProject(project)" class="home__project-button">
+                <div
+                    @click="showProject(project)"
+                    @keypress.enter="showProject(project)"
+                    class="home__project-button"
+                    tabindex="0"
+                    role="button"
+                >
                     <h2>{{ project.title }}</h2>
                 </div>
             </div>
@@ -80,8 +97,10 @@ export default {
                         >{{ link }}</a
                     >
 
-                    <h4>Tech Stacks Used</h4>
-                    <ul>
+                    <h4 v-if="projectBeingShown.techStackUsed.length > 0">
+                        Made using:
+                    </h4>
+                    <ul v-if="projectBeingShown.techStackUsed.length > 0">
                         <li
                             v-for="(
                                 stack, index
@@ -95,16 +114,21 @@ export default {
                 <div class="home__project-details-summary">
                     <img
                         v-if="projectBeingShown.image"
-                        v-bind:src="projectBeingShown.image"
+                        v-bind:src="projectBeingShown.image.src"
+                        v-bind:alt="projectBeingShown.image.alt"
                     />
                     <div v-html="projectBeingShown.summary"></div>
                 </div>
             </div>
 
             <div style="text-align: center">
-                <div @click="showAllProjects" class="home__back-to-projects">
+                <button
+                    @click="showAllProjects"
+                    class="home__back-to-projects"
+                    tabindex="0"
+                >
                     GO BACK
-                </div>
+                </button>
             </div>
         </div>
     </div>
