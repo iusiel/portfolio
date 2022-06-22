@@ -15,9 +15,9 @@ export default {
                 >
             </div>
             <p style="text-align: center">
-                Developing web applications since 2011 using PHP. I mainly use
-                Laravel for my projects. I am currently learning Symfony, Vue.JS
-                and Jamstack.
+                Developing web applications using PHP. I mainly use Laravel for
+                my projects. I am currently learning Symfony, Vue.JS and
+                Jamstack.
             </p>
             <ul class="main-menu">
                 <li>
