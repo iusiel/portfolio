@@ -62,7 +62,7 @@ export default {
 
 <template>
     <div>
-        <h1 style="text-align: center">SOME OF MY WORKS</h1>
+        <h1 style="text-align: center">SOME OF MY PROJECTS</h1>
         <div class="home__projects">
             <div
                 v-for="project in $frontmatter.projects"
@@ -97,8 +97,10 @@ export default {
                         >{{ link }}</a
                     >
 
-                    <h4>Tech Stacks Used</h4>
-                    <ul>
+                    <h4 v-if="projectBeingShown.techStackUsed.length > 0">
+                        Made using:
+                    </h4>
+                    <ul v-if="projectBeingShown.techStackUsed.length > 0">
                         <li
                             v-for="(
                                 stack, index
