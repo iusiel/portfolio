@@ -2,8 +2,6 @@
 meta:
     - name: description
       content: Developing web applications using PHP. I mainly use Laravel for my projects. I am currently learning Symfony, Vue.JS and Jamstack.
-    - property: og:site_name
-      content: Iusiel
     - property: og:image
       content: /images/logo.jpg
     - property: og:type

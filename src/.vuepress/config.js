@@ -28,6 +28,13 @@ module.exports = {
         [
             'meta',
             {
+                property: 'og:site_name',
+                content: 'Iusiel',
+            },
+        ],
+        [
+            'meta',
+            {
                 name: 'apple-mobile-web-app-status-bar-style',
                 content: '#E3D065',
             },
