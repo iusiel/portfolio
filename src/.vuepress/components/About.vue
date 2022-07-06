@@ -8,15 +8,15 @@ export default {
     <div>
         <h1 style="text-align: center">ABOUT ME</h1>
         <p>
-            I am a web developer that mostly uses Laravel for my projects. I
-            mostly use PHP as my backend language so I am more familiar with PHP
-            frameworks. I have also used Wordpress, Drupal and Magento2 in the
-            past, but my knowledge here is not updated since I don't regularly
-            use them. To keep my skills and knowledge up to date, I listen to
-            podcasts related to web development. I also check some roadmaps that
-            other web developers have created. You can check my github page
+            I am a web developer that likes to use Laravel for my projects. I
+            mostly use PHP as my backend language. I have also used WordPress,
+            Drupal, and Magento2 in the past, but my knowledge here is not
+            updated since I don't regularly use them. To keep my skills and
+            knowledge up to date, I listen to podcasts related to web
+            development. I also check some roadmaps that other web developers
+            have created. You can check my Github page
             <a href="https://github.com/iusiel">https://github.com/iusiel</a> to
-            learn about various projects that I have done during my free time.
+            learn about various projects I do during my free time.
         </p>
 
         <h2>When I am not doing projects</h2>
@@ -25,9 +25,8 @@ export default {
             development. Right now, I mostly play Stardew Valley, Euro Truck
             Simulator 2 and Dirt Rally 2.0. I also like to improve my critical
             thinking by learning about various logical fallacies and logical
-            biases. I am also trying my keep up with current events both local
-            and international so that I can have an informed opinion on various
-            things.
+            biases. I try to keep up with local and international news to have
+            an informed opinion.
         </p>
 
         <h2>You want to work with me?</h2>
