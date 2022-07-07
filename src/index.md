@@ -39,7 +39,13 @@ projects:
         <li>Lap times CRUD</li>
         <li>Summary page with links to their respective charts</li>
       </ul>
-        <img alt="Lap times chart" src="/images/lts2.png" />
+      <picture>
+        <source
+            srcset="/images/lts2.webp"
+            type="image/webp"
+        />
+        <img alt="Lap times chart" src="/images/lts2.png" width="1920" height="799"/>
+      </picture>
       '
     - title: PAASRS
       image: 
@@ -71,9 +77,15 @@ projects:
         <li>Study function</li>
       </ul>
 
-        <img alt="PAASRS showing question" src="/images/paasrs2.png" />
+      <picture>
+        <source srcset="/images/paasrs2.webp" type="image/webp" />
+        <img alt="PAASRS showing question" src="/images/paasrs2.png" width="1469" height="534" />
+      </picture>
 
-        <img alt="PAASRS showing answer" src="/images/paasrs3.png" />
+      <picture>
+        <source srcset="/images/paasrs3.webp" type="image/webp" />
+        <img alt="PAASRS showing answer" src="/images/paasrs3.png" width="1469" height="697" />
+      </picture>
       '
     - title: Calculator App
       image: 
