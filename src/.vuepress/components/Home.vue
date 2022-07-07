@@ -112,11 +112,21 @@ export default {
                     </ul>
                 </div>
                 <div class="home__project-details-summary">
-                    <img
-                        v-if="projectBeingShown.image"
-                        v-bind:src="projectBeingShown.image.src"
-                        v-bind:alt="projectBeingShown.image.alt"
-                    />
+                    <picture v-if="projectBeingShown.image">
+                        <source
+                            v-bind:srcset="`${projectBeingShown.image.src.substr(
+                                0,
+                                projectBeingShown.image.src.lastIndexOf('.')
+                            )}.webp`"
+                            type="image/webp"
+                        />
+                        <img
+                            width="750"
+                            height="500"
+                            v-bind:src="projectBeingShown.image.src"
+                            v-bind:alt="projectBeingShown.image.alt"
+                        />
+                    </picture>
                     <div v-html="projectBeingShown.summary"></div>
                 </div>
             </div>
