@@ -9,6 +9,7 @@ meta:
 activeLink: home
 projects:
     - title: My Portfolio
+      tagline: You're looking at it
       image:
       projectLinks:
           - https://iusiel.netlify.app/
@@ -21,6 +22,7 @@ projects:
       I have implemented some subtle animations, but overall, I think the design is quite simple (I am not good at creating a design). <br/><br/>
       The site has three main pages, the home page, the about me page, and the random things (blog) page.'
     - title: Lap Times Saver
+      tagline: For saving lap times
       image: 
         src: /images/lts1.png
         alt: Lap times summary dashboard
@@ -48,6 +50,7 @@ projects:
       </picture>
       '
     - title: PAASRS
+      tagline: Poor Attempt At Spaced Repetition Software
       image: 
         src: /images/paasrs1.png
         alt: PAASRS main dashboard
@@ -88,6 +91,7 @@ projects:
       </picture>
       '
     - title: Calculator App
+      tagline: Made with Vue.JS and Electron
       image: 
         src: /images/calculator1.png
         alt: Calculator app

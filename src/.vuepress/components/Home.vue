@@ -78,6 +78,9 @@ export default {
                     role="button"
                 >
                     <h2>{{ project.title }}</h2>
+                    <h3 v-if="project.tagline" class="home__project-tagline">
+                        {{ project.tagline }}
+                    </h3>
                 </div>
             </div>
         </div>
