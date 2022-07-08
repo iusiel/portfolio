@@ -96,6 +96,7 @@ projects:
         src: /images/calculator1.png
         alt: Calculator app
       projectLinks:
+        - https://github.com/iusiel/calculator
       techStackUsed:
           - Vue 2.6
           - Laravel 8
