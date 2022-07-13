@@ -7,6 +7,18 @@ export default {
 <template>
     <div>
         <h1 style="text-align: center">ABOUT ME</h1>
+        <div
+            v-if="$frontmatter.skills.length > 0"
+            class="about__skills-container"
+        >
+            <div
+                v-for="(skill, index) in $frontmatter.skills"
+                v-bind:key="index"
+                class="about__skill"
+            >
+                {{ skill }}
+            </div>
+        </div>
         <p>
             I am a web developer that likes to use Laravel for my projects. I
             mostly use PHP as my backend language. I have also used WordPress,
@@ -15,8 +27,10 @@ export default {
             knowledge up to date, I listen to podcasts related to web
             development. I also check some roadmaps that other web developers
             have created. You can check my Github page
-            <a href="https://github.com/iusiel">https://github.com/iusiel</a> to
-            learn about various projects I do during my free time.
+            <a target="_blank" href="https://github.com/iusiel"
+                >https://github.com/iusiel</a
+            >
+            to learn about various projects I do during my free time.
         </p>
 
         <h2>When I am not doing projects</h2>
