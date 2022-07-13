@@ -8,6 +8,12 @@ meta:
     - property: og:type
       content: website
 activeLink: about
+skills:
+    - PHP 8
+    - Laravel 8
+    - Vue 3
+    - VuePress
+    - Symfony 6
 ---
 
 <About />
